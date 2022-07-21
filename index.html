@@ -1,53 +1,69 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 
+
+
 <head>
-    <meta charset="UTF-8">
     <title>課題</title>
 
+
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <meta name="author" content="Kaho Sato">
+
+    <meta name="keywords" content="HTML, CSS, Javascript">
 
 </head>
 
 <body>
+    <h1 id="top">てきと～日記</h1>
 
-    <header>
-        <h1>6月3日</h1>
-    </header>
+    <section>
+        <div class="flex-container">
 
-    
-        <main>
-            <h2 id="top">6/4歩数発見!(^^)!</h2>
-            <p>携帯に歩数機能があることに気付きました！グラフにしてみた！先週はたくさん歩いたな～</p>
+            <main>
 
+                <h2>日付</h2>
+                <nav id="menu">
+                    <ul>
+
+                        <li><a href="../saisyukadai2/index.html" target="_blank">6月3日</a></li>
+
+                        <li><a href="../saisyukadai3/index.html" target="_blank">6月4日</a></li>
+
+
+                    </ul>
+                </nav>
         </main>
 
-        <div>
-            <h2></h2>
+        <aside>
+            <h2>今日の運勢☆</h2>
+
+            <button type="button" onclick="janken(0)">①</button>
+            <button type="button" onclick="janken(1)">②</button>
+            <button type="button" onclick="janken(2)">③</button>
+
             <div>
-                <!-- グラフを描画したい場所にcanvasタグを用意する -->
-                <canvas id="myChart"></canvas>
+
+                <p id="janken-result"></p>
             </div>
-
-
+        </aside>
         </div>
+    </section>
+    <div>
+        <a href="#hogehoge"></a>
+    </div>
 
 
+    <script src="./js/kadai.js"></script>
 
-        <ul><a href="../saisyukadai/index.html" target="_blank">ホームへ戻る</a></ul>
 
-        <!-- 外部のjavascriptを読み込む -->
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-        <!-- chart.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"
-            integrity="sha512-5m2r+g00HDHnhXQDbRLAfZBwPpPCaK+wPLV6lm8VQ+09ilGdHfXV7IVyKPkLOTfi4vTTUVJnz7ELs7cA87/GMA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <!-- 自分のjavascriptファイル -->
-        <script src="./js/kadai.js"></script>
-
+    <footer>
+        Copyright &copy; Sato, All Rights Reserved.
+    </footer>
 </body>
 
 </html>
